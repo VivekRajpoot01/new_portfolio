@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Rajpoot - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #6C63FF;
+            --secondary-color: #4CAF50;
+            --text-color: #333;
+            --bg-color: #F0F2F5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.5s forwards;
+        }
+        
+        nav {
+            background-color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: var(--primary-color);
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .project-info {
+            padding: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vivek Rajpoot</h1>
+            <p class="tagline">Computer Science Engineer | Machine Learning Enthusiast</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I'm a passionate Computer Science and Engineering student with a strong foundation in programming, machine learning, and web technologies. Always eager to learn and apply new technologies to solve real-world problems.</p>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>SQL</h3>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Machine Learning</h3>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-card">
+                        <h3>NumPy</h3>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Pandas</h3>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Matplotlib</h3>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Seaborn</h3>
+                    </div>
+                    <div class="skill-card">
+                        <h3>PyTorch</h3>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Scikit-Learn</h3>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Docker</h3>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Flask</h3>
+                    </div>
+                    <div class="skill-card">
+                        <h3>MS Excel</h3>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Tableau</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-card">
+                    <img src="/api/placeholder/600/300" alt="Boston House Price Prediction">
+                    <div class="project-info">
+                        <h3>Boston House Price Prediction</h3>
+                        <p>Developed a machine learning model to predict house prices in Boston using the famous Boston Housing Dataset.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+        
+        <section id="experience">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <h3>Amazon ML Summer School 2024</h3>
+                        <p>Participated in the Amazon ML Summer School 2024, where I learned key machine learning topics such as Supervised Learning, Neural Networks, Reinforcement Learning, and Generative AI.</p>
+                    </div>
+                    <div class="experience-card">
+                        <h3>Hacktoberfest 2023</h3>
+                        <p>Successfully contributed to open-source projects during Hacktoberfest 2023 and earned a participation badge for my efforts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>If you'd like to connect or discuss potential opportunities, feel free to reach out to me!</p>
+                <a href="mailto:vivekrajput2515@gmail.com" class="btn">Contact Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vivek Rajpoot. All Rights Reserved.</p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/v
